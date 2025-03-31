@@ -13,31 +13,31 @@ The project aims to predict future stock prices using machine learning models. W
 ````
 
 ## 3. Data Source
-Yahoo Finance API via yfinance Python library
-Tickers used include: AAPL, MSFT, with flexibility to scale to others
+- Yahoo Finance API via yfinance Python library
+- Tickers used include: AAPL, MSFT, with flexibility to scale to others
 
 ## 4. Data Cleaning
-a. Removal of missing values
-b. Target generation using next-day Open and Close prices
-c. Min-Max Scaling of all numeric features
-d. Multi-index to single-index conversion for ticker-aware modeling
+- a. Removal of missing values
+- b. Target generation using next-day Open and Close prices
+- c. Min-Max Scaling of all numeric features
+- d. Multi-index to single-index conversion for ticker-aware modeling
 
 
 ## 5. Data Exploration
-a. Time-series line plots of Close prices per ticker
-b. Volume spikes and trend correlations
-c. Target distribution visualized across time and assets
+- a. Time-series line plots of Close prices per ticker
+- b. Volume spikes and trend correlations
+- c. Target distribution visualized across time and assets
 
 ## 6. Features Used
-a. Raw Market Features: Open, High, Low, Close, Volume
-b. Target Variables: target_next_close
-c. Engineered (planned for LSTM): moving averages, RSI, volatility indicators, lagged features
+- a. Raw Market Features: Open, High, Low, Close, Volume
+- b. Target Variables: target_next_close
+- c. Engineered (planned for LSTM): moving averages, RSI, volatility indicators, lagged features
 
 ## 7. Models Used
-a. Ridge Regression (Baseline): Predicts target_next_close; Simple, interpretable, and performs reasonably well on structured data. 
-b. Models in progress:
-   LSTM (Long Short-Term Memory): For sequential pattern learning across historical prices
-   XGBoost (Xtreme Gradient Boosting)
+- a. Ridge Regression (Baseline): Predicts target_next_close; Simple, interpretable, and performs reasonably well on structured data. 
+- b. Models in progress:
+   - LSTM (Long Short-Term Memory): For sequential pattern learning across historical prices
+   - XGBoost (Xtreme Gradient Boosting)
    
 ## 8. Future Scope
 Try different architectural models, may include but not limited to: 
