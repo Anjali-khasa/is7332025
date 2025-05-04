@@ -9,7 +9,7 @@ The project aims to predict future stock prices using machine learning models. W
 1. data_cleaning.ipynb: Cleans and preprocesses raw historical stock data from yahoo finance
 2. data_exploration_stock_price.ipynb: Performs exploratory data analysis (EDA), visualizations, and feature inspection
 3. model_regression_ridge.ipynb: Implements Ridge Regression for baseline prediction for single ticker 
-4. lstm_prediction.ipynb: Deep learning-based LSTM model for time-series forecasting (in progress)
+4. lstm_prediction.ipynb: Deep learning-based LSTM model for time-series forecasting 
 ````
 
 ## 3. Data Source
@@ -31,19 +31,20 @@ The project aims to predict future stock prices using machine learning models. W
 ## 6. Features Used
 - a. Raw Market Features: Open, High, Low, Close, Volume
 - b. Target Variables: target_next_close
-- c. Engineered (planned for LSTM): moving averages, RSI, volatility indicators, lagged features
 
-## 7. Models Used
+## 7a. Models Used
 - a. Ridge Regression (Baseline): Predicts target_next_close; Simple, interpretable, and performs reasonably well on structured data. 
-- b. Models in progress:
-   - LSTM (Long Short-Term Memory): For sequential pattern learning across historical prices
-   - XGBoost (Xtreme Gradient Boosting)
+- b. LSTM (Long Short-Term Memory): For sequential pattern learning across historical prices
    
-## 8. Future Scope
+## 7b. Forecasting
+- Forecasted the close price for the next 5 days. 
+
+## 8. Future Scope for self-learning
 Try different architectural models, may include but not limited to: 
 - Autoencoders: For feature compression or anomaly detection
 - Transformer Networks: For attention-based time-series modeling across multiple assets
 - Ticker Embedding: To incorporate ticker identity directly into the model
+- Sentiment analysis to study the impact of news on the volatility of the share price. 
 
 ## 9. Goal
-To build an pipeline that ingests historical market data, learns both general and ticker-specific behavior, and outputs next-day price predictions with explainability and scalability.
+built the pipeline that ingested historical market data, learns general and ticker-specific behavior, and predictions/forecast next 5 day close price.
